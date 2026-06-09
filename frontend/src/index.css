@@ -23,6 +23,8 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+    -webkit-text-size-adjust: 100%;
 }
 
 body {
@@ -33,6 +35,11 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 ::selection {
@@ -84,41 +91,55 @@ body {
     border-bottom: 1px solid var(--border);
 }
 
-.btn-gold {
-    background: var(--gold);
-    color: #050505;
-    font-weight: 600;
-    padding: 0.9rem 1.6rem;
-    transition: all 0.3s ease;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.6rem;
-    border: 1px solid var(--gold);
-    cursor: pointer;
-    font-family: "Manrope", sans-serif;
-    letter-spacing: 0.02em;
-}
-.btn-gold:hover {
-    background: transparent;
-    color: var(--gold);
+@layer components {
+    .btn-gold {
+        background: var(--gold);
+        color: #050505;
+        font-weight: 600;
+        padding: 0.9rem 1.6rem;
+        transition: all 0.3s ease;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.6rem;
+        border: 1px solid var(--gold);
+        cursor: pointer;
+        font-family: "Manrope", sans-serif;
+        letter-spacing: 0.02em;
+        min-height: 44px;
+    }
+    .btn-gold:hover {
+        background: transparent;
+        color: var(--gold);
+    }
+
+    .btn-outline {
+        background: transparent;
+        color: var(--text);
+        padding: 0.9rem 1.6rem;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        transition: all 0.3s ease;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.6rem;
+        cursor: pointer;
+        font-family: "Manrope", sans-serif;
+        letter-spacing: 0.02em;
+        min-height: 44px;
+    }
+    .btn-outline:hover {
+        border-color: var(--gold);
+        color: var(--gold);
+    }
 }
 
-.btn-outline {
-    background: transparent;
-    color: var(--text);
-    padding: 0.9rem 1.6rem;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    transition: all 0.3s ease;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.6rem;
-    cursor: pointer;
-    font-family: "Manrope", sans-serif;
-    letter-spacing: 0.02em;
-}
-.btn-outline:hover {
-    border-color: var(--gold);
-    color: var(--gold);
+@media (max-width: 640px) {
+    .btn-gold,
+    .btn-outline {
+        padding: 0.8rem 1.2rem;
+        font-size: 0.9rem;
+    }
 }
 
 .service-card {
@@ -129,6 +150,11 @@ body {
         transform 0.5s ease;
     overflow: hidden;
     position: relative;
+}
+@media (max-width: 767px) {
+    .service-card {
+        grid-column: 1 / -1 !important;
+    }
 }
 .service-card:hover {
     border-color: var(--border-gold);
@@ -173,9 +199,14 @@ body {
 }
 .marquee-track {
     display: flex;
-    gap: 4rem;
+    gap: 2.5rem;
     width: max-content;
     animation: marquee 38s linear infinite;
+}
+@media (min-width: 768px) {
+    .marquee-track {
+        gap: 4rem;
+    }
 }
 
 /* Hero gradient overlay */

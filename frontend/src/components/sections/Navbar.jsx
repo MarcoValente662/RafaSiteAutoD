@@ -28,13 +28,13 @@ export default function Navbar() {
         scrolled ? "glass-nav" : "bg-transparent"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between h-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 flex items-center justify-between h-16 md:h-20">
         <a
           href="#top"
           data-testid="logo-link"
-          className="font-heading text-xl tracking-tight flex items-center gap-2"
+          className="font-heading text-lg sm:text-xl tracking-tight flex items-center gap-2 whitespace-nowrap"
         >
-          <span className="inline-block w-2 h-2 bg-[#D4AF37]" />
+          <span className="inline-block w-2 h-2 bg-[#D4AF37] shrink-0" />
           <span className="font-medium">{BUSINESS.name}</span>
         </a>
 
@@ -51,7 +51,7 @@ export default function Navbar() {
           ))}
         </nav>
 
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2 sm:gap-3">
           <a
             href={whatsappUrl()}
             target="_blank"
@@ -59,8 +59,7 @@ export default function Navbar() {
             data-testid="nav-whatsapp-cta"
             className="hidden md:inline-flex btn-gold text-sm whitespace-nowrap"
           >
-            <span className="hidden xl:inline">Contactar</span>
-            <span className="inline xl:hidden">Contactar</span>
+            Contactar
           </a>
           <button
             data-testid="mobile-menu-toggle"
@@ -75,13 +74,13 @@ export default function Navbar() {
 
       {open && (
         <div data-testid="mobile-menu" className="lg:hidden glass-nav border-t border-white/5">
-          <nav className="px-6 py-6 flex flex-col gap-4">
+          <nav className="px-4 sm:px-6 py-6 flex flex-col gap-4">
             {links.map((l) => (
               <a
                 key={l.href}
                 href={l.href}
                 onClick={() => setOpen(false)}
-                className="text-white/80 hover:text-[#D4AF37] text-sm tracking-wide"
+                className="text-white/80 hover:text-[#D4AF37] text-base tracking-wide py-1"
               >
                 {l.label}
               </a>
@@ -90,6 +89,7 @@ export default function Navbar() {
               href={whatsappUrl()}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => setOpen(false)}
               className="btn-gold text-sm justify-center mt-2"
             >
               Contactar

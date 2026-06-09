@@ -19,8 +19,8 @@ export default function Hero() {
       />
       <div className="absolute inset-0 hero-overlay" />
 
-      <div className="relative max-w-7xl mx-auto px-6 md:px-12 w-full pt-32 pb-24 z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-end">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 md:px-12 w-full pt-28 sm:pt-32 pb-20 sm:pb-24 z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 sm:gap-12 items-end">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -28,31 +28,31 @@ export default function Hero() {
             className="lg:col-span-8"
           >
             <span className="overline">{BUSINESS.tagline}</span>
-            <h1 className="font-heading text-5xl sm:text-6xl lg:text-7xl font-light tracking-tighter leading-none mt-6 mb-8">
+            <h1 className="font-heading text-[2.4rem] sm:text-6xl lg:text-7xl font-light tracking-tighter leading-[1.05] mt-5 sm:mt-6 mb-6 sm:mb-8">
               Cada detalhe,
               <br />
               <span className="italic font-extralight text-[#D4AF37]">obsessão</span>.
               <br />
               Cada carro, uma jóia.
             </h1>
-            <p className="max-w-xl text-white/70 text-base md:text-lg leading-relaxed">
+            <p className="max-w-xl text-white/70 text-sm sm:text-base md:text-lg leading-relaxed">
               Estúdio de estética automóvel especializado em superdesportivos, SUVs
               de luxo e clássicos. Polimento, vitrificação cerâmica e cuidado
               artesanal — do verniz ao último ponto da pele.
             </p>
 
-            <div className="flex flex-wrap items-center gap-4 mt-10">
+            <div className="flex flex-col sm:flex-row sm:flex-wrap sm:items-center gap-3 sm:gap-4 mt-8 sm:mt-10">
               <a
                 href={whatsappUrl()}
                 target="_blank"
                 rel="noopener noreferrer"
                 data-testid="hero-cta-whatsapp"
-                className="btn-gold"
+                className="btn-gold w-full sm:w-auto"
               >
                 <MessageCircle size={18} strokeWidth={1.5} />
                 Pedir orçamento
               </a>
-              <a href="#servicos" data-testid="hero-cta-services" className="btn-outline">
+              <a href="#servicos" data-testid="hero-cta-services" className="btn-outline w-full sm:w-auto">
                 Ver serviços
                 <ArrowDown size={18} strokeWidth={1.5} />
               </a>
@@ -65,7 +65,7 @@ export default function Hero() {
             transition={{ duration: 1, delay: 0.4 }}
             className="lg:col-span-4 lg:pl-10 lg:border-l lg:border-white/10"
           >
-            <div className="space-y-6">
+            <div className="space-y-5 sm:space-y-6">
               <div>
                 <div className="overline">Onde nos encontrar</div>
                 <p className="text-white text-sm mt-2 leading-relaxed">

@@ -33,19 +33,19 @@ export default function Gallery() {
     <section
       id="galeria"
       data-testid="gallery-section"
-      className="py-24 md:py-32 bg-[#080808] border-y border-white/5"
+      className="py-20 md:py-32 bg-[#080808] border-y border-white/5"
     >
-      <div className="max-w-7xl mx-auto px-6 md:px-12">
-        <div className="mb-16 max-w-2xl">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12">
+        <div className="mb-10 sm:mb-16 max-w-2xl">
           <span className="overline">Portfólio</span>
-          <h2 className="font-heading text-4xl sm:text-5xl font-light tracking-tight leading-tight mt-5">
+          <h2 className="font-heading text-[2rem] sm:text-5xl font-light tracking-tight leading-[1.1] mt-4 sm:mt-5">
             Resultados que falam
             <br />
             <span className="italic text-[#D4AF37]">por nós</span>.
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-4 sm:gap-6">
           {IMAGES.map((img, i) => (
             <motion.figure
               key={i}
@@ -62,8 +62,8 @@ export default function Gallery() {
                 className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
                 loading="lazy"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-              <figcaption className="absolute bottom-5 left-5 text-xs uppercase tracking-[0.2em] text-white/0 group-hover:text-white transition-all duration-500">
+              <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-500" />
+              <figcaption className="absolute bottom-4 sm:bottom-5 left-4 sm:left-5 text-[0.65rem] sm:text-xs uppercase tracking-[0.2em] text-white md:text-white/0 md:group-hover:text-white transition-all duration-500">
                 {img.cap}
               </figcaption>
             </motion.figure>

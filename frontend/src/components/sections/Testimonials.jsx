@@ -6,11 +6,11 @@ export default function Testimonials() {
     <section
       id="depoimentos"
       data-testid="testimonials-section"
-      className="py-24 md:py-32 max-w-7xl mx-auto px-6 md:px-12"
+      className="py-20 md:py-32 max-w-7xl mx-auto px-4 sm:px-6 md:px-12"
     >
-      <div className="mb-16 max-w-2xl">
+      <div className="mb-10 sm:mb-16 max-w-2xl">
         <span className="overline">Quem confia</span>
-        <h2 className="font-heading text-4xl sm:text-5xl font-light tracking-tight leading-tight mt-5">
+        <h2 className="font-heading text-[2rem] sm:text-5xl font-light tracking-tight leading-[1.1] mt-4 sm:mt-5">
           A palavra de quem
           <br />
           <span className="italic text-[#D4AF37]">já viveu o detalhe</span>.
@@ -26,15 +26,15 @@ export default function Testimonials() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7, delay: i * 0.12 }}
-            className="bg-[#0a0a0a] p-9 md:p-11 flex flex-col"
+            className="bg-[#0a0a0a] p-7 sm:p-9 md:p-11 flex flex-col"
           >
-            <span className="font-heading text-6xl text-[#D4AF37] leading-none mb-4">
+            <span className="font-heading text-5xl sm:text-6xl text-[#D4AF37] leading-none mb-3 sm:mb-4">
               “
             </span>
-            <blockquote className="text-white/85 text-base leading-relaxed">
+            <blockquote className="text-white/85 text-sm sm:text-base leading-relaxed">
               {t.quote}
             </blockquote>
-            <figcaption className="mt-8 pt-6 border-t border-white/10">
+            <figcaption className="mt-6 sm:mt-8 pt-5 sm:pt-6 border-t border-white/10">
               <div className="text-white text-sm font-medium">{t.name}</div>
               <div className="text-white/50 text-xs mt-1 tracking-wide">{t.car}</div>
             </figcaption>

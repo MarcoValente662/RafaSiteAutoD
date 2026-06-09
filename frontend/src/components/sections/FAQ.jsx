@@ -11,16 +11,16 @@ export default function FAQ() {
     <section
       id="faq"
       data-testid="faq-section"
-      className="py-24 md:py-32 bg-[#080808] border-y border-white/5"
+      className="py-20 md:py-32 bg-[#080808] border-y border-white/5"
     >
-      <div className="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-12 gap-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-12">
         <div className="lg:col-span-4">
           <span className="overline">Perguntas frequentes</span>
-          <h2 className="font-heading text-4xl sm:text-5xl font-light tracking-tight leading-tight mt-5">
+          <h2 className="font-heading text-[2rem] sm:text-5xl font-light tracking-tight leading-[1.1] mt-4 sm:mt-5">
             Respostas <br />
             <span className="italic text-[#D4AF37]">directas</span>.
           </h2>
-          <p className="text-white/55 text-sm mt-6 leading-relaxed max-w-xs">
+          <p className="text-white/55 text-sm mt-5 sm:mt-6 leading-relaxed max-w-xs">
             Não encontrou a sua pergunta? Contacte-nos no WhatsApp — respondemos
             em minutos durante o horário de funcionamento.
           </p>
@@ -36,13 +36,13 @@ export default function FAQ() {
               >
                 <AccordionTrigger
                   data-testid={`faq-trigger-${i}`}
-                  className="text-left text-white text-base md:text-lg font-medium hover:text-[#D4AF37] hover:no-underline py-6 [&[data-state=open]]:text-[#D4AF37]"
+                  className="text-left text-white text-sm sm:text-base md:text-lg font-medium hover:text-[#D4AF37] hover:no-underline py-5 sm:py-6 gap-3 [&[data-state=open]]:text-[#D4AF37]"
                 >
                   {item.q}
                 </AccordionTrigger>
                 <AccordionContent
                   data-testid={`faq-content-${i}`}
-                  className="text-white/65 text-sm md:text-base leading-relaxed pb-7"
+                  className="text-white/65 text-sm md:text-base leading-relaxed pb-6 sm:pb-7"
                 >
                   {item.a}
                 </AccordionContent>

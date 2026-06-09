@@ -33,6 +33,21 @@
 - SEO básico (title pt-PT, meta description, lang="pt-PT")
 - **Atualização Dez 2025: site agora em Português de Portugal, preços em € (Euros), CTAs renomeados para "Contactar"**
 
+## Mobile Responsiveness Pass (Jan 2026)
+- Corrigido bug crítico CSS: `.btn-gold`/`.btn-outline` movidos para `@layer components` para que utilitários Tailwind como `hidden` consigam sobrepor (antes o botão "Contactar" da navbar aparecia indevidamente em telemóvel)
+- Tipografia responsiva: H1/H2 com `text-[2rem]/[2.4rem]` em <640px, `sm:text-5xl/6xl` em ≥640px (evita texto demasiado grande em ecrãs pequenos)
+- Cards de serviço: forçados a `grid-column: 1 / -1` em <768px para corrigir layout quebrado por causa do `style.gridColumn` inline (cada serviço ocupa agora largura total no telemóvel)
+- Padding lateral reduzido em mobile: `px-4 sm:px-6 md:px-12` em todas as secções
+- Padding vertical reduzido em mobile: `py-20 md:py-32`
+- Botões empilham em coluna no mobile (`flex-col sm:flex-row`) com `w-full sm:w-auto` para tap targets confortáveis
+- Logo da navbar com `whitespace-nowrap` e tamanho responsivo (`text-lg sm:text-xl`); navbar mais baixa em mobile (`h-16 md:h-20`)
+- Marquee com `gap: 2.5rem` em mobile (era 4rem) e texto mais pequeno
+- FAB WhatsApp: tamanho menor em mobile (`w-12 h-12 md:w-14 md:h-14`), `bottom-4 right-4` e `safe-area-inset-bottom` para iPhone
+- Galeria: legendas visíveis sempre em mobile (não dependem de hover) com gradiente bottom-up
+- Telefone e e-mail no Contact agora clicáveis (`tel:` / `mailto:`)
+- Adicionado `scroll-padding-top: 80px` para anchor links não ficarem por baixo da navbar sticky
+- Cap `img { max-width: 100%; height: auto }` e `-webkit-text-size-adjust: 100%` para prevenir overflow em iOS
+
 ## Next Action Items
 - Substituir o placeholder `BUSINESS` em `/app/frontend/src/constants/business.js` pelo nome, endereço, telefone e número de WhatsApp REAIS da empresa
 - Trocar imagens da galeria por fotos reais antes/depois dos próprios trabalhos da empresa
