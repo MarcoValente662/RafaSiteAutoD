@@ -3,12 +3,12 @@ import { BUSINESS, whatsappUrl } from "@/constants/business";
 import { Menu, X } from "lucide-react";
 
 const links = [
-  { href: "#sobre", label: "Sobre" },
-  { href: "#servicos", label: "Serviços" },
-  { href: "#galeria", label: "Galeria" },
-  { href: "#depoimentos", label: "Depoimentos" },
-  { href: "#faq", label: "FAQ" },
-  { href: "#contato", label: "Contato" },
+  { href: "#sobre", label: "Sobre", id: "sobre" },
+  { href: "#servicos", label: "Serviços", id: "servicos" },
+  { href: "#galeria", label: "Galeria", id: "galeria" },
+  { href: "#depoimentos", label: "Depoimentos", id: "depoimentos" },
+  { href: "#faq", label: "FAQ", id: "faq" },
+  { href: "#contato", label: "Contato", id: "contato" },
 ];
 
 export default function Navbar() {
@@ -43,7 +43,7 @@ export default function Navbar() {
             <a
               key={l.href}
               href={l.href}
-              data-testid={`nav-${l.label.toLowerCase()}`}
+              data-testid={`nav-${l.id}`}
               className="text-sm text-white/70 hover:text-[#D4AF37] transition-colors tracking-wide"
             >
               {l.label}
@@ -57,9 +57,10 @@ export default function Navbar() {
             target="_blank"
             rel="noopener noreferrer"
             data-testid="nav-whatsapp-cta"
-            className="hidden md:inline-flex btn-gold text-sm"
+            className="hidden md:inline-flex btn-gold text-sm whitespace-nowrap"
           >
-            Agendar no WhatsApp
+            <span className="hidden xl:inline">Agendar no WhatsApp</span>
+            <span className="inline xl:hidden">WhatsApp</span>
           </a>
           <button
             data-testid="mobile-menu-toggle"

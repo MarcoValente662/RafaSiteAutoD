@@ -34,7 +34,7 @@ export default function Services() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-80px" }}
               transition={{ duration: 0.7, delay: (i % 3) * 0.1 }}
-              className={`service-card md:col-span-${s.span} group`}
+              className="service-card group"
               style={{ gridColumn: `span ${s.span} / span ${s.span}` }}
             >
               <div className="grid grid-cols-1 lg:grid-cols-2 h-full">
@@ -68,7 +68,7 @@ export default function Services() {
                     ))}
                   </ul>
 
-                  <div className="mt-auto pt-7 flex items-end justify-between border-t border-white/5 mt-7">
+                  <div className="mt-auto pt-7 flex items-end justify-between border-t border-white/5">
                     <div>
                       <div className="text-[0.65rem] uppercase tracking-[0.22em] text-white/40">
                         A partir de
