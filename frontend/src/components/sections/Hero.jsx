@@ -65,14 +65,14 @@ export default function Hero() {
             className="lg:col-span-4 lg:pl-10 lg:border-l lg:border-white/10"
           >
             <div className="space-y-5 sm:space-y-6">
-              {/* <div>
-                <div className="overline">Onde nos encontrar</div>
+              <div>
+                <div className="overline">Local</div>
                 <p className="text-white text-sm mt-2 leading-relaxed">
                   {BUSINESS.address}
-                  <br />
-                  {BUSINESS.city}
+                  {/* <br />
+                  {BUSINESS.city} */}
                 </p>
-              </div> */}
+              </div>
               <div className="gold-line" />
               <div>
                 <div className="overline">Horário</div>
