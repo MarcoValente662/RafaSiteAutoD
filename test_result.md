@@ -177,18 +177,6 @@ frontend:
           agent: "testing"
           comment: "✅ PASSED - Title 'O seu carro merece o melhor' is responsive (80.6px height on mobile, 120px on tablet - not too large). Buttons 'Contactar' and 'Ligar agora' stack vertically (full-width) on mobile (<640px). Phone links use tel: protocol (2 found) and email uses mailto: protocol (1 found) - both are clickable."
 
-  - task: "Floating WhatsApp button (FAB)"
-    implemented: true
-    working: true
-    file: "/app/frontend/src/components/FloatingWhatsApp.jsx"
-    stuck_count: 0
-    priority: "high"
-    needs_retesting: false
-    status_history:
-        - working: true
-          agent: "testing"
-          comment: "✅ PASSED - On mobile (<768px): only green circle visible (48px × 48px), label 'Contactar' hidden with 'hidden md:inline-block' class. On tablet/desktop (≥768px): circle (56px × 56px) + label 'Contactar' both visible. Button positioned correctly in bottom-right corner with proper z-index (z-50)."
-
   - task: "General responsiveness and navigation"
     implemented: true
     working: true
