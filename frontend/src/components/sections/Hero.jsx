@@ -36,8 +36,7 @@ export default function Hero() {
               Cada carro, uma jóia.
             </h1>
             <p className="max-w-xl text-white/70 text-sm sm:text-base md:text-lg leading-relaxed">
-              Estúdio de estética automóvel especializado em superdesportivos, SUVs
-              de luxo e clássicos. Polimento, vitrificação cerâmica e cuidado
+              Estúdio de estética automóvel especializado em todo o tipo de carros. Vitrificação cerâmica e cuidado
               artesanal — do verniz ao último ponto da pele.
             </p>
 
@@ -66,14 +65,14 @@ export default function Hero() {
             className="lg:col-span-4 lg:pl-10 lg:border-l lg:border-white/10"
           >
             <div className="space-y-5 sm:space-y-6">
-              <div>
+              {/* <div>
                 <div className="overline">Onde nos encontrar</div>
                 <p className="text-white text-sm mt-2 leading-relaxed">
                   {BUSINESS.address}
                   <br />
                   {BUSINESS.city}
                 </p>
-              </div>
+              </div> */}
               <div className="gold-line" />
               <div>
                 <div className="overline">Horário</div>

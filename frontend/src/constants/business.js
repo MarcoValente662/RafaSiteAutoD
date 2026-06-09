@@ -4,13 +4,13 @@ export const BUSINESS = {
   tagline: "Estética Automóvel Premium",
   city: "Lisboa, Portugal",
   address: "Rua dos Detalhes, 1200 — Parque das Nações",
-  hours: "Seg. a Sáb. · 09h00 às 19h00",
-  phone: "+351 910 000 000",
-  whatsapp: "351910000000", // sem símbolos, formato internacional
+  hours: "Seg. a Sáb. · 09h00 às 22h00",
+  phone: "+351 962 737 604",
+  whatsapp: "351962737604", // sem símbolos, formato internacional
   whatsappMessage: "Olá! Vim através do site e gostaria de pedir um orçamento.",
-  email: "geral@autodetailpro.pt",
-  instagram: "@autodetailpro",
-  founded: "2014",
+  email: "geral@",
+  instagram: "@novelux.auto",
+  founded: "2026",
 };
 
 export const whatsappUrl = (msg) =>
@@ -101,40 +101,40 @@ export const TESTIMONIALS = [
 export const FAQS = [
   {
     q: "Quanto tempo dura uma vitrificação cerâmica?",
-    a: "A nossa vitrificação tem uma durabilidade média de 2 a 3 anos, dependendo dos cuidados de manutenção. Recomendamos uma revisão semestral para garantir o melhor desempenho do coating.",
+    a: "A nossa vitrificação tem uma durabilidade média de 1 a 2 anos, dependendo dos cuidados de manutenção. Recomendamos uma revisão semestral para garantir o melhor desempenho do coating.",
   },
   {
     q: "Trabalham com marcação ou por ordem de chegada?",
-    a: "Trabalhamos exclusivamente com marcação prévia. Isso garante o tempo necessário para entregar cada serviço com o padrão que prometemos. Marque pelo WhatsApp.",
+    a: "Trabalhamos exclusivamente com marcação prévia e serviço ao domicílio. A nossa equipa desloca-se até à sua casa ou garagem com todo o equipamento necessário, garantindo um atendimento VIP sem que tenha de sair de casa."
   },
   {
-    q: "Quanto tempo é que o carro fica nas instalações?",
-    a: "Depende do serviço. A lavagem detalhada demora cerca de 2h. O polimento com vitrificação completa pode demorar de 1 a 2 dias úteis. Indicamos sempre o prazo no orçamento.",
+    q: "Quanto tempo demora o serviço?",
+    a: "O tempo de execução depende sempre do estado atual do veículo e do tratamento escolhido. Contacte-nos pelo WhatsApp com o modelo do seu carro e teremos todo o gosto em dar-lhe uma estimativa exata para o seu projeto."
   },
   {
     q: "Posso lavar o carro logo após a vitrificação?",
-    a: "Recomendamos aguardar 7 dias para que o coating cure por completo. Após esse período, basta uma lavagem por imersão suave a cada 2 ou 3 semanas.",
+    a: "Depois do período de cura e absorção (cerca de 7 dias), sim, à vontade. Durante a primeira semana, o revestimento cerâmico ainda se está a fixar ao verniz. Após essa fase, a lavagem torna-se muito mais fácil, bastando uma manutenção suave."
   },
   {
     q: "Trabalham com carros blindados ou clássicos?",
-    a: "Sim. Temos protocolo específico para blindados (cuidado com pinos e vedações) e para clássicos (pintura original, sem máquinas agressivas). Indique-nos na marcação.",
+    a: "Sim. Indique-nos na marcação.",
   },
-  {
-    q: "É possível pagar em prestações?",
-    a: "Sim. Aceitamos MB Way, multibanco e cartão de crédito até 6x sem juros para serviços a partir de € 180. Consulte as condições especiais para pacotes.",
-  },
+  // {
+  //   q: "É possível pagar em prestações?",
+  //   a: "Sim. Aceitamos MB Way, multibanco e cartão de crédito até 6x sem juros para serviços a partir de € 180. Consulte as condições especiais para pacotes.",
+  // },
 ];
 
 export const DIFFERENTIALS = [
   { icon: "ShieldCheck", title: "Produtos certificados", text: "Trabalhamos apenas com marcas premium homologadas internacionalmente." },
   { icon: "Sparkles", title: "Acabamento concours", text: "Padrão de detalhe inspirado em concursos de elegância automóvel." },
-  { icon: "Clock", title: "Prazo garantido", text: "Entregamos na data combinada ou o próximo serviço sai com 20% de desconto." },
-  { icon: "Award", title: "Mais de 10 anos", text: "Década de experiência a cuidar de superdesportivos e SUVs de luxo." },
+  { icon: "Clock", title: "Processo Transparente", text: "Mantemos a comunicação aberta durante todo o processo, respeitando o tempo que a verdadeira arte automóvel exige." },
+  { icon: "Award", title: "Dedicação Exclusiva", text: "Nascemos da exigência extrema. Tratamos cada projeto como uma verdadeira obra de arte automóvel." },
 ];
 
 export const STATS = [
-  { value: "10+", label: "Anos de mercado" },
-  { value: "4.200", label: "Carros tratados" },
-  { value: "98%", label: "Clientes recorrentes" },
-  { value: "32", label: "Marcas atendidas" },
+  { value: "Novo", label: "Anos de mercado" },
+  { value: "2", label: "Carros tratados" },
+  //{ value: "98%", label: "Clientes recorrentes" },
+  //{ value: "32", label: "Marcas atendidas" },
 ];
