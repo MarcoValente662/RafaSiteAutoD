@@ -8,7 +8,7 @@ export const BUSINESS = {
   phone: "+351 962 737 604",
   whatsapp: "351962737604", // sem símbolos, formato internacional
   whatsappMessage: "Olá! Vim através do site e gostaria de pedir um orçamento.",
-  email: "geral@",
+  email: "noveluxautocare",
   instagram: "@novelux.auto",
   founded: "2026",
 };
