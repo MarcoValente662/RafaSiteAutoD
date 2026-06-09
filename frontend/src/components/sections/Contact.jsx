@@ -47,7 +47,7 @@ export default function Contact() {
           </div>
 
           <aside className="lg:col-span-5 lg:pl-12 lg:border-l lg:border-white/10 space-y-6 sm:space-y-8">
-            <Info
+            {/* <Info
               icon={<MapPin size={18} strokeWidth={1.3} />}
               label="Endereço"
               content={
@@ -57,7 +57,7 @@ export default function Contact() {
                   {BUSINESS.city}
                 </>
               }
-            />
+            /> */}
             <Info
               icon={<Clock size={18} strokeWidth={1.3} />}
               label="Horário"
