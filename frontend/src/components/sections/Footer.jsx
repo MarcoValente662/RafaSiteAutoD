@@ -6,7 +6,7 @@ export default function Footer() {
       data-testid="main-footer"
       className="bg-[#050505] border-t border-white/5 py-14"
     >
-      <div className="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-3 gap-10 items-start">
+      {/* <div className="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-3 gap-10 items-start">
         <div>
           <div className="font-heading text-xl flex items-center gap-2">
             <span className="inline-block w-2 h-2 bg-[#D4AF37]" />
@@ -31,7 +31,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 md:px-12 mt-12 pt-6 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-3 text-[11px] text-white/35 tracking-wider">
         <span>© {new Date().getFullYear()} {BUSINESS.name}. Todos os direitos reservados.</span>
         <span>Site institucional · Estética automóvel premium</span>
-      </div>
-    </footer>
+      </div>*/}
+    </footer> 
   );
 }
