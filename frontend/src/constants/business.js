@@ -3,7 +3,7 @@ export const BUSINESS = {
   name: "AutoDetail Pro",
   tagline: "Estética Automóvel Premium",
   city: "Lisboa, Portugal",
-  address: "Rua dos Detalhes, 1200 — Parque das Nações",
+  address: "Domencilio",
   hours: "Seg. a Sáb. · 09h00 às 22h00",
   phone: "+351 962 737 604",
   whatsapp: "351962737604", // sem símbolos, formato internacional
