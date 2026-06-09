@@ -8,7 +8,8 @@
 - Serviços: padrão (lavagem, polimento, vitrificação, higienização, couro, vidros) com preços de exemplo
 - Contato: apenas WhatsApp (sem formulário funcional)
 - Estilo: escuro premium (preto/dourado)
-- Idioma: pt-BR
+- Idioma: **Português de Portugal (pt-PT)**
+- Moeda: **Euros (€)**
 
 ## Architecture
 - Frontend SPA (React + Tailwind + Framer Motion + Shadcn Accordion)
@@ -16,21 +17,21 @@
 - Tudo é single-page com âncoras (#sobre, #servicos, #galeria, #depoimentos, #faq, #contato)
 - Conteúdo centralizado em `/app/frontend/src/constants/business.js`
 
-## What's Been Implemented (Dec 2025 — First Finish)
+## What's Been Implemented (Dec 2025)
 - Navbar sticky com glassmorphism + menu mobile responsivo
-- Hero cinematográfico com CTA de WhatsApp e dados da loja
+- Hero cinematográfico com CTA "Contactar" e dados da loja
 - Marquee de marcas atendidas
 - Seção Sobre + estatísticas (10+ anos, 4.200 carros, etc.)
-- Catálogo de 6 serviços em bento grid asimétrico com preços, features, tempo médio e CTA de WhatsApp pré-preenchido por serviço
+- Catálogo de 6 serviços em bento grid asimétrico com preços em €, features, duração média e CTA "Contactar" pré-preenchido por serviço
 - Seção de diferenciais com ícones lucide
 - Galeria masonry com 5 imagens automotivas
 - Depoimentos (3 cards com aspas grandes douradas)
-- FAQ usando Shadcn Accordion (6 perguntas)
-- Seção de contato com endereço, horário, telefone, e-mail, instagram
+- FAQ usando Shadcn Accordion (6 perguntas em pt-PT)
+- Seção de contacto com morada, horário, telefone, e-mail, instagram
 - Footer minimalista
-- Botão flutuante de WhatsApp com pulsação verde
-- SEO básico (title pt-BR, meta description, lang="pt-BR")
-- 100% testado pelo testing_agent (12/12 cenários)
+- Botão flutuante "Contactar" com pulsação verde
+- SEO básico (title pt-PT, meta description, lang="pt-PT")
+- **Atualização Dez 2025: site agora em Português de Portugal, preços em € (Euros), CTAs renomeados para "Contactar"**
 
 ## Next Action Items
 - Substituir o placeholder `BUSINESS` em `/app/frontend/src/constants/business.js` pelo nome, endereço, telefone e número de WhatsApp REAIS da empresa

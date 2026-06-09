@@ -16,12 +16,12 @@ export default function Services() {
             <h2 className="font-heading text-4xl sm:text-5xl font-light tracking-tight leading-tight mt-5">
               Catálogo completo de
               <br />
-              estética automotiva.
+              estética automóvel.
             </h2>
           </div>
           <p className="text-white/60 text-sm max-w-sm">
             Valores de referência para carros de porte médio. Pickups, SUVs grandes
-            e blindados podem ter acréscimo. Solicite seu orçamento exato.
+            e blindados podem ter acréscimo. Peça o seu orçamento exacto.
           </p>
         </div>
 
@@ -71,25 +71,25 @@ export default function Services() {
                   <div className="mt-auto pt-7 flex items-end justify-between border-t border-white/5">
                     <div>
                       <div className="text-[0.65rem] uppercase tracking-[0.22em] text-white/40">
-                        A partir de
+                        Desde
                       </div>
                       <div className="font-heading text-4xl font-light text-white mt-1">
                         {s.price}
                       </div>
                       <div className="text-xs text-white/40 mt-1">
-                        Tempo médio · {s.duration}
+                        Duração média · {s.duration}
                       </div>
                     </div>
                     <a
                       href={whatsappUrl(
-                        `Olá! Tenho interesse no serviço de ${s.name}. Pode me passar mais detalhes?`,
+                        `Olá! Tenho interesse no serviço de ${s.name}. Pode dar-me mais detalhes?`,
                       )}
                       target="_blank"
                       rel="noopener noreferrer"
                       data-testid={`service-cta-${s.id}`}
                       className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.2em] text-white/70 hover:text-[#D4AF37] transition-colors"
                     >
-                      Agendar
+                      Marcar
                       <ArrowUpRight size={16} strokeWidth={1.5} />
                     </a>
                   </div>
@@ -100,7 +100,7 @@ export default function Services() {
         </div>
 
         <p className="text-center text-xs text-white/40 mt-12 tracking-wide">
-          * Valores sujeitos a avaliação presencial. Trabalhamos somente com hora marcada.
+          * Valores sujeitos a avaliação presencial. Trabalhamos apenas com marcação prévia.
         </p>
       </div>
     </section>

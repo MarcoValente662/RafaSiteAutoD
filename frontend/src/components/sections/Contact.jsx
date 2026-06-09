@@ -15,13 +15,14 @@ export default function Contact() {
           <div className="lg:col-span-7">
             <span className="overline">Vamos conversar</span>
             <h2 className="font-heading text-5xl sm:text-6xl lg:text-7xl font-light tracking-tighter leading-none mt-5">
-              Seu carro merece <br />
+              O seu carro merece <br />
               <span className="italic text-[#D4AF37]">o melhor.</span>
             </h2>
             <p className="text-white/65 text-base md:text-lg leading-relaxed mt-8 max-w-xl">
-              Atendimento exclusivamente com hora marcada. Envie uma mensagem
-              pelo WhatsApp e nosso especialista retorna em minutos com
-              avaliação e orçamento personalizados para o seu veículo.
+              Atendimento exclusivamente com marcação prévia. Envie-nos uma
+              mensagem pelo WhatsApp e o nosso especialista responde em
+              minutos com avaliação e orçamento personalizados para a sua
+              viatura.
             </p>
             <div className="flex flex-wrap items-center gap-4 mt-10">
               <a
@@ -32,7 +33,7 @@ export default function Contact() {
                 className="btn-gold"
               >
                 <MessageCircle size={18} strokeWidth={1.5} />
-                Iniciar conversa no WhatsApp
+                Contactar
               </a>
               <a
                 href={`tel:${BUSINESS.phone.replace(/\D/g, "")}`}

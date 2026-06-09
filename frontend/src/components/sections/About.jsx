@@ -19,7 +19,7 @@ export default function About() {
           <span className="overline">Sobre nós</span>
           <h2 className="font-heading text-4xl sm:text-5xl font-light tracking-tight leading-tight mt-5">
             Um estúdio, não <br />
-            <span className="italic text-[#D4AF37]">um lava-rápido</span>.
+            <span className="italic text-[#D4AF37]">uma lavagem rápida</span>.
           </h2>
         </motion.div>
 
@@ -31,15 +31,15 @@ export default function About() {
           className="lg:col-span-7"
         >
           <p className="text-base md:text-lg text-white/70 leading-relaxed">
-            Há mais de uma década, transformamos a forma como apaixonados por
-            automóveis cuidam de seus carros. Aqui, cada veículo é tratado como
-            uma peça única: análise de pintura sob luz LED de inspeção, escolha
-            milimétrica do composto correto e finalização feita à mão por
+            Há mais de uma década que transformamos a forma como os apaixonados
+            por automóveis cuidam dos seus carros. Aqui, cada viatura é tratada
+            como uma peça única: análise de pintura sob luz LED de inspeção,
+            escolha milimétrica do composto certo e acabamento feito à mão por
             profissionais certificados.
           </p>
           <p className="text-base md:text-lg text-white/70 leading-relaxed mt-6">
-            Não fazemos volume. Fazemos detalhe — e essa é a única coisa que
-            importa quando o assunto é preservar o seu carro.
+            Não fazemos volume. Fazemos detalhe — e é a única coisa que importa
+            quando o assunto é preservar o seu carro.
           </p>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-14 pt-10 border-t border-white/10">

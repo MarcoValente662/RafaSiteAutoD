@@ -7,11 +7,11 @@ export default function FloatingWhatsApp() {
       href={whatsappUrl()}
       target="_blank"
       rel="noopener noreferrer"
-      aria-label="Falar no WhatsApp"
+      aria-label="Contactar"
       className="fixed bottom-6 right-6 z-50 wa-pulse flex items-center gap-3 group"
     >
       <span className="hidden md:inline-block bg-black/80 backdrop-blur border border-white/10 px-4 py-2 text-xs uppercase tracking-[0.2em] text-white/80 group-hover:text-[#D4AF37] group-hover:border-[#D4AF37]/40 transition-all">
-        Falar agora
+        Contactar
       </span>
       <span
         className="w-14 h-14 flex items-center justify-center"

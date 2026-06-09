@@ -13,7 +13,7 @@ export default function Differentials() {
     >
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
         <div className="lg:col-span-4">
-          <span className="overline">Por que nós</span>
+          <span className="overline">Porquê nós</span>
           <h2 className="font-heading text-4xl sm:text-5xl font-light tracking-tight leading-tight mt-5">
             Padrão concours
             <br />

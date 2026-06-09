@@ -8,7 +8,7 @@ const links = [
   { href: "#galeria", label: "Galeria", id: "galeria" },
   { href: "#depoimentos", label: "Depoimentos", id: "depoimentos" },
   { href: "#faq", label: "FAQ", id: "faq" },
-  { href: "#contato", label: "Contato", id: "contato" },
+  { href: "#contato", label: "Contacto", id: "contato" },
 ];
 
 export default function Navbar() {
@@ -59,8 +59,8 @@ export default function Navbar() {
             data-testid="nav-whatsapp-cta"
             className="hidden md:inline-flex btn-gold text-sm whitespace-nowrap"
           >
-            <span className="hidden xl:inline">Agendar no WhatsApp</span>
-            <span className="inline xl:hidden">WhatsApp</span>
+            <span className="hidden xl:inline">Contactar</span>
+            <span className="inline xl:hidden">Contactar</span>
           </a>
           <button
             data-testid="mobile-menu-toggle"
@@ -92,7 +92,7 @@ export default function Navbar() {
               rel="noopener noreferrer"
               className="btn-gold text-sm justify-center mt-2"
             >
-              Agendar no WhatsApp
+              Contactar
             </a>
           </nav>
         </div>

@@ -13,11 +13,11 @@ export default function Footer() {
             {BUSINESS.name}
           </div>
           <p className="text-white/45 text-xs mt-3 max-w-xs leading-relaxed">
-            Estúdio especializado em estética automotiva premium desde {BUSINESS.founded}.
+            Estúdio especializado em estética automóvel premium desde {BUSINESS.founded}.
           </p>
         </div>
         <div className="text-xs text-white/45 leading-relaxed">
-          <div className="text-white/70 mb-2 text-sm">Contato</div>
+          <div className="text-white/70 mb-2 text-sm">Contacto</div>
           {BUSINESS.address}<br />
           {BUSINESS.city}<br />
           {BUSINESS.phone}
@@ -30,7 +30,7 @@ export default function Footer() {
 
       <div className="max-w-7xl mx-auto px-6 md:px-12 mt-12 pt-6 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-3 text-[11px] text-white/35 tracking-wider">
         <span>© {new Date().getFullYear()} {BUSINESS.name}. Todos os direitos reservados.</span>
-        <span>Site institucional · Estética automotiva premium</span>
+        <span>Site institucional · Estética automóvel premium</span>
       </div>
     </footer>
   );

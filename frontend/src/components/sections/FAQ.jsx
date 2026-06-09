@@ -15,14 +15,14 @@ export default function FAQ() {
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-12 gap-12">
         <div className="lg:col-span-4">
-          <span className="overline">Dúvidas frequentes</span>
+          <span className="overline">Perguntas frequentes</span>
           <h2 className="font-heading text-4xl sm:text-5xl font-light tracking-tight leading-tight mt-5">
             Respostas <br />
-            <span className="italic text-[#D4AF37]">diretas</span>.
+            <span className="italic text-[#D4AF37]">directas</span>.
           </h2>
           <p className="text-white/55 text-sm mt-6 leading-relaxed max-w-xs">
-            Não encontrou sua pergunta? Fale conosco no WhatsApp — respondemos em
-            minutos durante o horário comercial.
+            Não encontrou a sua pergunta? Contacte-nos no WhatsApp — respondemos
+            em minutos durante o horário de funcionamento.
           </p>
         </div>
 

@@ -33,12 +33,12 @@ export default function Hero() {
               <br />
               <span className="italic font-extralight text-[#D4AF37]">obsessão</span>.
               <br />
-              Cada carro, uma joia.
+              Cada carro, uma jóia.
             </h1>
             <p className="max-w-xl text-white/70 text-base md:text-lg leading-relaxed">
-              Estúdio de estética automotiva especializado em superesportivos, SUVs
+              Estúdio de estética automóvel especializado em superdesportivos, SUVs
               de luxo e clássicos. Polimento, vitrificação cerâmica e cuidado
-              artesanal — do verniz ao último ponto do couro.
+              artesanal — do verniz ao último ponto da pele.
             </p>
 
             <div className="flex flex-wrap items-center gap-4 mt-10">
@@ -50,7 +50,7 @@ export default function Hero() {
                 className="btn-gold"
               >
                 <MessageCircle size={18} strokeWidth={1.5} />
-                Solicitar orçamento
+                Pedir orçamento
               </a>
               <a href="#servicos" data-testid="hero-cta-services" className="btn-outline">
                 Ver serviços
@@ -90,7 +90,7 @@ export default function Hero() {
       </div>
 
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 text-white/40 text-xs tracking-[0.3em] uppercase z-10 hidden md:block">
-        Role para descobrir
+        Desça para descobrir
       </div>
     </section>
   );
