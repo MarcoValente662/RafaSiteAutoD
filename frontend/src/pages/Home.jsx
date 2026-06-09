@@ -25,7 +25,7 @@ export default function Home() {
       <FAQ />
       <Contact />
       <Footer />
-      <FloatingWhatsApp />
+      {/* <FloatingWhatsApp /> */}
     </main>
   );
 }
